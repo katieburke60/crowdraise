@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 1
+  object: MyString
+  application_fee: 1
+  capture: false
+  description: MyString
+  destination: MyString
+  transfer_group: MyString
+  on_behalf_of: MyString
+  source: MyString
+  currency: MyString
+
+two:
+  amount: 1
+  object: MyString
+  application_fee: 1
+  capture: false
+  description: MyString
+  destination: MyString
+  transfer_group: MyString
+  on_behalf_of: MyString
+  source: MyString
+  currency: MyString
