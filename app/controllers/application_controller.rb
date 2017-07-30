@@ -1,16 +1,14 @@
 class ApplicationController < ActionController::Base
+  include ApplicationHelper
   protect_from_forgery with: :exception
-  helper_method :current_user, :is_logged_in?
 
-  def current_user
-    if is_logged_in?
-      User.find_by_id(session[:user_id])
+  # A simple before_action to redirect a non-logged-in
+  # user to the login page
+  def require_user
+    if session[:user_id].blank?
+      redirect_to new_sessions_path
+      return
     end
   end
-
-  def is_logged_in?
-    !!session[:user_id]
-  end
-
 
 end

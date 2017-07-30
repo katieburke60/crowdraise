@@ -5,6 +5,17 @@ Rails.application.routes.draw do
   resources :campaigns, only: [:new, :create, :index, :show] do
     resources :fundings
   end
+
+  # Stripe Connect endpoints
+  #  - oauth flow
+  get '/connect/oauth' => 'stripe#oauth', as: 'stripe_oauth'
+  get '/connect/confirm' => 'stripe#confirm', as: 'stripe_confirm'
+  # get '/connect/deauthorize' => 'stripe#deauthorize', as: 'stripe_deauthorize'
+  #create accounts
+  post '/connect/new' => 'stripe#new', as: 'stripe_new'
+
+
+  resources :accounts
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/signup' => 'users#new'

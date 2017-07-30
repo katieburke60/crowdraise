@@ -5,6 +5,12 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string :username
       t.string :token
       t.string :password_digest
+      t.string :publishable_key
+      t.string :secret_key
+      t.string :currency, :default => 'USD'
+      t.string :stripe_account_type
+      t.string :stripe_user_id
+      t.string :customer_id
 
       t.timestamps
     end

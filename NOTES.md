@@ -1,14 +1,26 @@
 NEXT TO DOS
 1. Make graph
 
+QUESTIONS
+1. What's happening with the Oauth2 gem?
+2. Better understanding of where I can access methods from (e.g., current user - defined in application helpers)
+
 LONG LIST
 High
-1. Give backers refunds if the campaign fails
+1. Give backers refunds if the campaign fails (https://stripe.com/docs/refunds)
 - Need to signal when campaign fails (% complete < 100 when Today = deadline)
 - Issue refunds through Stripe
 
+2. Stripe Connect: Give payouts to creators
+- On appropriate timeline
+- Ideally happens automatically when the $ is raised
+a. Register as a platform
+
+3. Integrate some sort of other developer tools (https://stripe.com/works-with)
+
 Medium
 1. You can't contribute to your own project.
+2. Authentication and access to only your own profile
 
 Low
 1. Check if campaign has ended and figure out what to show then
@@ -24,6 +36,8 @@ NEED HELP TO DOS
 4. Save stripe API keys appropriately (better understand ENV, etc.)
 5. How to use modules (including use of self) and where you can access methods defined in controller actions
 6. How to appropriately link up charge objects.
+7. How to pass ruby objects to js (particularly stuff that's in the show page)
+8. How to fix CURRENT_USER issue (not avalable with stripe_oauth)
 
 SMALLER TO DOS
 1. Make components of campaign show page dynamic (basic)

@@ -7,6 +7,8 @@ end
 
 gem 'bootstrap-sass'
 # gem 'compass-rails'
+gem 'rest-client', '~> 1.8'
+gem 'oauth2', '~> 1.2'
 
 gem "paperclip", "~> 5.0.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
