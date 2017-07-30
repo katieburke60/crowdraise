@@ -5,48 +5,48 @@
  * License: Creative Commons Attribution 3.0 License
  * Website: http://themes.audaindesigns.com
  */
-h1 {
-  font-family: 'Libre Franklin', sans-serif;
+h1{
+  font-family:'helvetica';
+  font-size:200%;
 }
+
  .main-content {
- 	padding:30px 0px;
+ 	padding:50px 30px;
  }
 
 
  .main {
- 	/*float: right;*/
+ 	float: center;
  	border-radius:10px;
- 	padding: 40px;
+ 	padding: 50px;
  	margin-bottom:30px;
-	min-height:250px;
-	margin-right: 150px
+ 	margin-top:50px;
+	min-height:230px;
+	margin-right: 1px;
+  width: 1000px
  }
 
  .reward {
- 	float:right;
+ 	float:left
  	border-radius:4px;
 	min-height:230px;
-	width:100px;
+	width:200px;
  	padding: 10px;
-	margin-right:700px;
+	margin-left:500px;
  	margin-bottom:10px;
  }
 
  .reward-block {
-position: relative;
+ 	/*position:relative;*/
  	background-color: #fff;
  	border-radius: 4px;
- 	padding: 20px;
+ 	/*padding: 20px;*/
  	margin-bottom:10px;
-  width: 200px
  }
 
  .all-content {
-   width: 800px;
+   width: 1200px;
    margin: auto;
- }
- .second-nav {
-   height: 10px
  }
 
 /*-Base-*/
@@ -54,10 +54,11 @@ position: relative;
 border: 2px;
 border-style: solid;
 height: 400px;
-width: 800px;
+width: 900px;
 max-width: 100%;
 height: auto;
 width: auto\9; /* ie8 */
+}
 }
 .centerImage {
 display: block;
@@ -85,15 +86,15 @@ a {
 
 /*-Header-*/
 .header {
-	/*background-color: #00b6b2;*/
-	/*border-bottom: 5px solid #00b6b2;*/
-	padding: 0px 0px;
+	background-color: #00b6b2;
+	border-bottom: 5px solid #00b6b2;
+	padding: 30px 0px;
 }
 .goal-summary {
-	padding: 0px 40px;
+	padding: 0px 5px 30px 5px;
 }
 .goal-summary .backers, .goal-summary .funded, .goal-summary .time-left, .goal-summary .reminder {
-	margin: 10px 10px 10px 0px;
+	margin: 10px 20px 10px 0px;
 	padding-right: 20px;
 	display: inline-block;
 	border-right: 1px solid rgba(255, 255, 255, 0.39);
@@ -104,16 +105,16 @@ a {
 .goal-summary .backers h3, .goal-summary .funded h3, .goal-summary .time-left h3 {
 	/*background-color:#fff;*/
 	padding:5px;
-	margin:0px 0px 0px 0px;
+	margin:0px 0px 5px 0px;
 	display:table;
 	border-radius:4px;
 	color:#00b6b2;
 }
 .goal-summary .backers span, .goal-summary .funded span, .goal-summary .time-left span {
-	/*color:#fff;*/
+	color:#66666;
 }
 .goal-summary .reminder a {
-	/*background-color:#fff;*/
+	background-color:#fff;
 	padding:8px;
 	margin:0px 0px 10px 0px;
 	display:table;
@@ -122,11 +123,11 @@ a {
 }
 .goal-summary .reminder a:hover, .goal-summary .reminder a:focus {
 	background-color:#00b6b2;
-	/*color:#fff;*/
+	color:#fff;
 }
 @media (max-width: 767px) {
 	.goal-summary {
-		text-align: left;
+		text-align: center;
 		padding: 0px 40px;
 	}
 }
@@ -139,6 +140,8 @@ a {
 /*-Section Blocks-*/
 .section-block {
 	background-color: #F7F7F7;
+  padding-left:80px;
+  /*width:800px;*/
 
 }
 
@@ -277,14 +280,8 @@ a {
 	padding-right:5px;
 }
 .progress-bar {
-	background-color: #000066;
+	background-color: #00b6b2;
 	box-shadow:none;
-  height:40px;
-}
-.progress-font {
-  color: #ECEBEB;
-  font-size:125%;
-  padding-left:1px;
 }
 .progress {
 	height: 30px;
@@ -503,3 +500,8 @@ a {
 	font-weight: 600;
 	letter-spacing: 2px;
 }
+
+/*-Overrides-*/
+.btn, input{
+	outline:none;
+	{
