@@ -15,10 +15,16 @@ class Campaign < ApplicationRecord
 
   def percent_complete
     p = self.raised / self.funding_goal
-    number_with_precision(p, precision: 2,  strip_insignificant_zeros: true)
+    (p*100).round
+    # number_with_precision(p, precision: 4,  strip_insignificant_zeros: false)
   end
 
   def number_backers
     self.backers.length
+  end
+
+  def days_left
+    hours_left = (self.deadline.to_time - DateTime.now.to_time) / 60 / 60
+    days_left = (hours_left / 24).round
   end
 end

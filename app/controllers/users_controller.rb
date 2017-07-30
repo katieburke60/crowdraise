@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  # skip_before_action :redirect_if_not_logged_in
-  # skip_before_filter :verify_authenticity_token
 
   def new
     @user = User.new
@@ -18,6 +16,9 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    if !is_myself?
+      redirect_to '/'
+    end
   end
 
 private

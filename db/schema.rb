@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 20170724210840) do
     t.string   "stripe_account_type"
     t.string   "stripe_user_id"
     t.string   "customer_id"
+    t.string   "refresh_token"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.index ["email"], name: "index_users_on_email", using: :btree

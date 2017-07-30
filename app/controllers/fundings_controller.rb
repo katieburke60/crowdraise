@@ -16,8 +16,8 @@ class FundingsController < ApplicationController
     else
       customer =
       Stripe::Customer.create(
-      :email => params[:stripeEmail],
-      :source => params[:stripeToken],
+        :email => params[:stripeEmail],
+        :source => params[:stripeToken],
       )
       current_user.customer_id = customer.id
     end
@@ -28,17 +28,24 @@ class FundingsController < ApplicationController
       :amount => @amount,
       :currency => 'usd',
     )
-
-    stripe_charge = Stripe::Charge.create(
-    :customer => customer.id,
-    :amount => @amount,
-    :description => 'Rails Stripe customer',
-    :currency => 'usd',
-    )
+    if current_user.stripe_user_id
+      stripe_charge = Stripe::Charge.create({
+        :amount => @amount,
+        :source => "tok_visa",
+        #what do they mean by tokenizing a charge with Elements?
+        :currency => 'usd',
+      }, :stripe_account => current_user.stripe_user_id)
+    else
+      stripe_charge = Stripe::Charge.create(
+        :customer => customer.id,
+        :amount => @amount,
+        :description => 'Rails Stripe customer',
+        :currency => 'usd',
+      )
+    end
 
     funding.stripe_id = stripe_charge.id
     funding.save
-    binding.pry
 
     redirect_to campaign_path(params[:campaign_id])
 

@@ -25,6 +25,8 @@ Medium
 Low
 1. Check if campaign has ended and figure out what to show then
 - Show status (ended versus active in your account page)
+2. refunds
+3. Coupons (rewards area)
 
 NEED HELP TO DOS
 1. Make the correct dates for the campaigns (how to convert date time to MJD)
@@ -38,6 +40,7 @@ NEED HELP TO DOS
 6. How to appropriately link up charge objects.
 7. How to pass ruby objects to js (particularly stuff that's in the show page)
 8. How to fix CURRENT_USER issue (not avalable with stripe_oauth)
+9. How to do a flash message
 
 SMALLER TO DOS
 1. Make components of campaign show page dynamic (basic)

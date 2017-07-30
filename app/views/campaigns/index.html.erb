@@ -1,4 +1,5 @@
 <% render 'layouts/navbar' %>
+
 <div class="w-section section u-marginbottom-40">
        <div class="w-container">
            <div class="w-row u-marginbottom-30">
@@ -11,6 +12,9 @@
                    </div>
                </div> -->
            </div>
+           <% if flash[:notice] %>
+             <div class="notice"><%= flash[:notice] %></div>
+           <% end %>
            <% @campaigns.each do |c| %>
              <div class="w-row">
                  <div class="w-col w-col-4">
@@ -24,20 +28,20 @@
                              </div>
                              <div class="card-project-meter aon online incomplete">
                                  <div class="meter">
-                                     <div class="meter-fill" style="width: 29.31%;"></div>
+                                     <div class="meter-fill" style="width: <%= c.percent_complete %>;"></div>
                                  </div>
                              </div>
                              <div class="card-project-stats">
                                  <div class="w-row">
                                      <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-                                         <div class="fontsize-base fontweight-semibold"><%= number_to_percentage((c.raised / c.funding_goal), precision: 0) %></div>
+                                         <div class="fontsize-base fontweight-semibold"><%= c.percent_complete %></div>
                                      </div>
                                      <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-center-small-only">
                                          <div class="fontsize-smaller fontweight-semibold">$<%= c.raised %></div>
                                          <div class="fontsize-smallest lineheight-tightest">Raised</div>
                                      </div>
                                      <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-right">
-                                         <div class="fontsize-smaller fontweight-semibold"> 10 days</div>
+                                         <div class="fontsize-smaller fontweight-semibold"> <%= c.days_left %> days</div>
                                          <div class="fontsize-smallest lineheight-tightest">Remaining</div>
                                      </div>
                                  </div>

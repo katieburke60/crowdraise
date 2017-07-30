@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  skip_before_action :redirect_if_not_logged_in
   skip_before_filter :verify_authenticity_token
 
   def new
@@ -11,7 +12,7 @@ class SessionsController < ApplicationController
       redirect_to user
     else
       flash[:alert] = "Information invalid"
-      render '/'
+      redirect_to '/'
     end
   end
 

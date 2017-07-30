@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   include ApplicationHelper
   protect_from_forgery with: :exception
+  before_action :redirect_if_not_logged_in
 
   # A simple before_action to redirect a non-logged-in
   # user to the login page
@@ -10,5 +11,6 @@ class ApplicationController < ActionController::Base
       return
     end
   end
+  
 
 end

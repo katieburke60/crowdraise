@@ -1,13 +1,14 @@
 require 'oauth2'
 require_relative '../../helpers/application_helper.rb'
+require 'pry'
 
+# def authorize_url(params = {})
+#   params = (params || {}).merge(redirection_params)
+#   connection.build_url(options[:authorize_url], params).to_s
+# end
 class StripeOauth < Struct.new( :user )
   def oauth_url(params)
     url = client.authorize_url({
-      # def authorize_url(params = {})
-      #   params = (params || {}).merge(redirection_params)
-      #   connection.build_url(options[:authorize_url], params).to_s
-      # end
       :scope => 'read_write',
       :stripe_landing => 'login',
       :stripe_user => {

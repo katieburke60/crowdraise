@@ -277,8 +277,14 @@ a {
 	padding-right:5px;
 }
 .progress-bar {
-	background-color: #00b6b2;
+	background-color: #000066;
 	box-shadow:none;
+  height:40px;
+}
+.progress-font {
+  color: #ECEBEB;
+  font-size:125%;
+  padding-left:1px;
 }
 .progress {
 	height: 30px;
