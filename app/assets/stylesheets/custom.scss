@@ -1,0 +1,66 @@
+#signup {
+  padding: 30px
+}
+#login {
+  padding: 30px
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #00b6b2;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+
+
+  .navbar {
+      margin-bottom: 0;
+  }
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+  color: #545151;
+  padding: 50px 75px 100px 100px;
+  font-family: 'Shadows Into Light', cursive;
+}

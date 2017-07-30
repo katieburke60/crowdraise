@@ -1,0 +1,21 @@
+<h2>Sign Up Form</h2>
+<em>Create a user to start creating and backing campaigns!</em>
+
+<br></br>
+
+<% if @user.errors.any? %>
+  <div id='profile-errors'>
+    <% @user.errors.full_messages.each do |message| %>
+    <p><%= message %></p>
+    <% end %>
+  </div>
+<% end %>
+<br/>
+
+<%= form_for @user do |f| %>
+  <div>Email <%= f.text_field :email %></div><br>
+  <div>Username <%= f.text_field :username %></div><br>
+  <div>Password <%= f.password_field :password %></div><br />
+
+  <div><%= f.submit %></div>
+<% end %>

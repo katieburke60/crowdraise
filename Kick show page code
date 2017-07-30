@@ -1,0 +1,445 @@
+<html class="projects_show fontface js skrollr skrollr-desktopjsjsjsjsjs" data-request-id="45c661dd-1501-45b5-bc43-0c8717ef830f" lang="en">
+
+<head>
+
+  <script>
+  var toggle = function(id) {
+    var s = document.getElementById(id).style;
+    s.display = s.display == 'none' ? 'block' : 'none';
+    return false;
+  }
+  var show = function(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+  var hide = function(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+  var toggleTrace = function() {
+    retu truncated 594 bytes...
+    </script>
+
+        <script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="true"></script>
+        <script src="/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" data-turbolinks-track="true"></script>
+        <script src="/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" data-turbolinks-track="true"></script>
+        <script src="/assets/action_cable.self-5454023407ffec0d29137c7110917e1e745525ae9afbc05f52104c4cd6597429.js?body=1" data-turbolinks-track="true"></script>
+        <script src="/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" data-turbolinks-track="true"></script>
+        <script src="/assets/campaigns.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="true"></script>
+        <script src="/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="true"></script>
+        <script src="/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" data-turbolinks-track="true"></script>
+        <title>Crowdraise</title>
+        <meta name="csrf-param" content="authenticity_token">
+        <meta name="csrf-token" content="ghsFPpZLhm1Da/D5Bte8k8nQISZ+GQ7C1W/jSs0ItXKDf4UeNKCbHjU7u1uK71K+dRpsfxjBO3uDEt3WGYhaRA==">
+        </head>
+
+        <body class="project projects not-mobile not-phone not-mobile-safari not-chrome-ios not-forces-video-controls not-tablet not-ipad not-iphone not-ios not-android not-touchable not-native-app-request not-apple-pay-capable not-android-pay-capable responsive skip_autologin"
+        id="projects_show">
+
+
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+
+              <div id="zbyqtMgB2u88" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;">
+              <div id="S8dsP0hH1M7Q" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"></div>
+              </div>
+
+              <div class="container-fluid">
+              <div class="row">
+              <div class="col-md-1">
+              </div>
+              <div class="col-md-10">
+
+              <script>
+              docElement = this.document.documentElement;
+              docElement.className = docElement.className.replace(/\bno-js\b/, '') + 'js';
+              </script>
+              <title>
+              Gather on a Field of Quilts for a One-Night Performance by Performance Space 122 — Kickstarter
+              </title>
+              <script>
+              window.honeybadger_configuration = {
+                api_key: "02ab109335c0dd1a93506d92f22217a7",
+                environment: "production",
+                component: "projects",
+                action: "show",
+                onerror: false
+              };
+              </script>
+
+              <!--[if lt IE 9]>
+              <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+              <![endif]-->
+
+
+
+              <link rel="stylesheet" media="screen,print" href="https://static.kickstarter.com/assets/packages/base-ef192044dc9c283e53d7723fa0808771a5d196f5b37aa05d64d8e36915797207.css">
+
+              <link href="https://static.kickstarter.com/favicon.ico" rel="icon" type="image/x-icon">
+              <link href="https://static.kickstarter.com/assets/apple-touch-icon-precomposed-6ecac82f89362b13b1655bf64db0978decfd5fd93bea6e1a5864ef9d76866820.png" rel="apple-touch-icon-precomposed" type="image/png">
+              <link href="https://static.kickstarter.com/assets/apple-touch-icon-ipad-precomposed-2a99854a953fb9a9f5eebca0b9da17a0ede44de493676de5571ec51aabbf8233.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png">
+              <link href="https://static.kickstarter.com/assets/apple-touch-icon-iphone4-precomposed-3be484606ddb24c56001b2e0030eea1793d98a9df653feb6a3586874bccb4ce4.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png">
+              <link href="https://static.kickstarter.com/assets/apple-touch-icon-120x120-193d212480ffb2706300f9cdca4c1d54a4cd043c5531b1add237a18088d5ab7a.png" rel="apple-touch-icon" sizes="120x120" type="image/png">
+              <link href="https://static.kickstarter.com/assets/apple-touch-icon-152x152-b5f69ae08504da478245b07ae7c31849bd4630aeba8ea513246d367abf3304bc.png" rel="apple-touch-icon" sizes="152x152" type="image/png">
+              <link href="https://static.kickstarter.com/assets/apple-touch-icon-167x167-a70a477f95bc6064cd8aa657baab9aa9ced69cba7b5d692f0220a7cff672c07e.png" rel="apple-touch-icon" sizes="167x167" type="image/png">
+              <link href="https://static.kickstarter.com/assets/apple-touch-icon-180x180-721b718e39d953efff0ca790ed4ab7eda2e6bfd3a9aefca63c4ecca3761f68db.png" rel="apple-touch-icon" sizes="180x180" type="image/png">
+              <link href="https://www.kickstarter.com/services/oembed?url=https%3A%2F%2Fwww.kickstarter.com%2Fprojects%2F264790802%2Fan-all-night-peformance-with-emily-johnson" rel="alternate" title="Gather on a Field of Quilts for a One-Night Performance Script Tag oEmbed"
+              type="application/json+oembed">
+              <link rel="alternate" type="application/atom+xml" title="Gather on a Field of Quilts for a One-Night Performance : Kickstarter" href="https://www.kickstarter.com/projects/264790802/an-all-night-peformance-with-emily-johnson/posts.atom">
+
+              <script type="text/javascript">
+              var _sift = _sift || [];
+              _sift.push(['_setAccount', '637102']);
+              _sift.push(['_setUserId', '319855062']);
+              _sift.push(['_trackPageview']);
+
+              (function() {
+                function loadSift() {
+                  var insertScript = function(url) {
+                    truncated 580 bytes...
+                    </script>
+
+                          <script src="https://www.kickstarter.com/locale/fc5b/en.js"></script>
+
+                            <main role="main">
+
+                            <div id="growl_section" class="center jGrowl"></div>
+                            <div class="Campaign-state-live" id="main_content">
+
+                            <div id="content-wrap">
+                            <section class="NS_projects__hero_funding bg-grey-100">
+                            <div class="grid-container flex flex-column">
+                            <div class="grid-row order-0-md order-2-lg mb5-lg mb0-md">
+                            <div class="col-full col-lg-16-24">
+                            <div class="mx-4 mx-12-md mx0-lg">
+                            <div class="aspect-ratio aspect-ratio--16x9">
+                            <div class="project-image mb2 cf aspect-ratio--object" data-has-video="true" id="video-section">
+                            <div class="video-player vertically_center large" id="video_pitch" data-video-url="https://ksr-video.imgix.net/projects/3024662/video-797559-h264_high.mp4" data-image="https://ksr-ugc.imgix.net/assets/017/400/669/65a30fc91bc90c539aa4fbc22d43a521_original.jpg?crop=faces&amp;w=1024&amp;h=576&amp;fit=crop&amp;v=1500588301&amp;auto=format&amp;q=92&amp;s=9df672417f179e8ee8998ed2d88dcdec"
+                            data-dimensions="{&quot;width&quot;:640,&quot;height&quot;:382}"
+                            data-video="{&quot;id&quot;:797559,&quot;status&quot;:&quot;successful&quot;,&quot;high&quot;:&quot;https://ksr-video.imgix.net/projects/3024662/video-797559-h264_high.mp4&quot;,&quot;base&quot;:&quot;https://ksr-video.imgix.net/projects/3024662/video-797559-h264_base.mp4&quot;,&quot;webm&quot;:&quot;https://ksr-video.imgix.net/projects/3024662/video-797559-webm.webm&quot;,&quot;width&quot;:640,&quot;height&quot;:360,&quot;frame&quot;:&quot;https://d15chbti7ht62o.cloudfront.net/projects/3024662/video-797559-h264_high.jpg?2017&quot;}"><video class="has_webm landscape" preload="none" style="">
+
+                            You'll need an HTML5 capable browser to see this content.
+                            </video>
+                            <img class="has_played_hide full-width poster landscape" alt="Gather on a Field of Quilts for a One-Night Performance project video thumbnail" src="https://ksr-ugc.imgix.net/assets/017/400/669/65a30fc91bc90c539aa4fbc22d43a521_original.jpg?crop=faces&amp;w=1024&amp;h=576&amp;fit=crop&amp;v=1500588301&amp;auto=format&amp;q=92&amp;s=9df672417f179e8ee8998ed2d88dcdec"
+                            style="min-height: 0px;">
+                            <div class="play_button_container absolute-center has_played_hide">
+                            <button aria-label="Play video" class="play_button_big play_button_dark rounded">
+                            <span class="ksr-icon__play" aria-hidden="true"></span>
+                            Play
+                            </button>
+                            </div>
+                            <div class="reset-video js-reset-video-once">
+                            <div class="reset-video__icon">
+                            <div class="audio-indicator js-autoplay-svg">
+                            <svg version="1.1" viewBox="0 0 18 17.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                            <!-- / Animation Variables -->
+                            <!-- / Indicator Bar 1 -->
+                            <polygon class="audio-indicator-bar" points="0 7.74564 2 7.74564 2 11.3415 2 17.2 0 17.2">
+                            <animate attributeName="points" begin="0s" calcMode="spline" dur="1.2s" keySplines="0.18 0.01 0.37 0.99;0.18 0.01 0.37 0.99;0.18 0.01 0.37 0.99" keyTimes="0; 0.3; 0.9; 1" repeatCount="indefinite" values="0,0 2,0 2,11.5 2,17.2 0,17.2;0,2.6 2,2.6 2,8.2 2,17.2 0,17.2;0,12.1 2,12.1 2,14 2,17.2 0,17.2;0,0 2,0 2,11.5 2,17.2 0,17.2"></animate>
+                            </polygon>
+                            <!-- / Indicator Bar 2 -->
+                            <polygon class="audio-indicator-bar" points="4 6.58862 6 6.58862 6 10.3213 6 17.2 4 17.2">
+                            <animate attributeName="points" begin="0s" calcMode="spline" dur="1.2s" keySplines="0.18 0.01 0.37 0.99;0.18 0.01 0.37 0.99;0.18 0.01 0.37 0.99" keyTimes="0; 0.2; 0.6; 1" repeatCount="indefinite" values="4,3.9 6,3.9 6,8.6 6,17.2 4,17.2;4,10.6 6,10.6 6,12.9 6,17.2 4,17.2;4,6.4 6,6.4 6,10.2 6,17.2 4,17.2;4,3.9 6,3.9 6,8.6 6,17.2 4,17.2"></animate>
+                            </polygon>
+
+                            </g>
+                            </svg>
+                            </div>
+
+                            </div>
+                            <div class="reset-video__label">
+                            Replay with sound
+                            </div>
+                            </div>
+                            <div class="rewind-video js-reset-video-once">
+                            <div class="rewind-video__wrapper absolute-center">
+                            <div class="rewind-video__inner">
+                            <div class="rewind-video__button">
+                            <div class="rewind-video__button_inner">
+                            <div class="rewind-video__icon"></div>
+                            <div class="rewind-video__label">
+                            Play with <br> sound
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="player_controls absolute-bottom mb3 rounded white bg-green-dark forces-video-controls_hide">
+                            <div class="left full-height">
+                            <button class="btn btn--with-svg btn--dark-green left playpause play mr2 ml0 full-height">
+                            <svg class="svg-icon__play" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use></svg>
+                            <svg class="svg-icon__pause" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pause"></use></svg>
+                            </button>
+                            <time class="time current_time left video-time--current">00:00</time>
+                            </div>
+                            <div class="right full-height">
+                            <time class="time total_time left mr2 video-time--total">00:00</time>
+                            <button class="m0 left button button_icon button_icon_white volume full-height">
+                            <span class="ss-icon ss-volume icon_volume_nudge"></span>
+                            <span class="ss-icon ss-highvolume"></span>
+                            </button>
+                            <div class="volume_container left">
+                            <div class="progress_bar progress_bar_dark progress_bg">
+                            <div class="progress_bar_bg"></div>
+                            <div class="progress progress_bar_progress"></div>
+                            <div aria-label="Volume" class="progress_handle progress_bar_handle" role="slider" tabindex="0"></div>
+                            </div>
+                            </div>
+                            <button aria-label="Fullscreen" class="m0 left button button_icon button_icon_white fullscreen full-height">
+                            <span class="ss-icon ss-expand"></span>
+                            <span class="ss-icon ss-delete"></span>
+                            </button>
+                            </div>
+                            <div class="clip">
+                            <div class="progress_container pr2 pl2">
+                            <div class="progress_bar progress_bar_dark progress_bg">
+                            <div class="progress_bar_bg"></div>
+                            <div class="buffer progress_bar_buffer"></div>
+                            <div class="progress progress_bar_progress"></div>
+                            <div aria-label="Played" class="progress_handle progress_bar_handle" role="slider" tabindex="0"></div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="clear"></div>
+                            </div>
+                            </div>
+                            </div>
+
+                            </div>
+                            </div>
+                            <div class="block-lg hide">
+                            <div class="NS_projects__badges mb3">
+                            <div class="border-top border-bottom border-top-none-md border-none-lg nested-full-width-xs nested-full-width-sm nested-full-width-md mb4 mb5-sm mb0-md">
+                            <div class="grid-row">
+                            <div class="col-sm-22-24 col-offset-sm-1-24 col-offset-md-0-24">
+                            <div class="py2 py3-lg flex">
+                            <div class="flex items-center auto-scroll-x">
+                            <a class="nowrap navy-700 flex items-center medium mr3 type-12" href="/discover/recommended?ref=pwl_badge">
+                            <div class="pill bg-ksr-green-700 inline-block h4 w4 flex items-center justify-center mr1">
+                            <svg class="svg-icon__kickstarter nowrap fill-white icon-small test-pwl-badge" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#kickstarter"></use></svg>
+                            </div>
+                            Project We Love
+                            </a>
+                            <a class="nowrap navy-700 flex items-center medium mr3 type-12" href="/discover/categories/dance/performances?ref=category">
+                            <div class="inline-block w4 h4 rounded inline-flex items-center justify-center mr1 bg-navy-400">
+                            <svg class="svg-icon__compass fill-navy-700 icon-small" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#compass"></use></svg>
+                            </div>
+                            Performances
+                            </a>
+                            <a class="nowrap navy-700 flex items-center medium type-12" href="/discover/places/manhattan-ny?ref=city">
+                            <div class="inline-block w4 h4 rounded inline-flex items-center justify-center mr1 bg-navy-400">
+                            <svg class="svg-icon__map-pin fill-navy-700 icon-small" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map-pin"></use></svg>
+                            </div>
+                            Manhattan, NY
+                            </a>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+
+                            </div>
+                            </div>
+                            <div class="col-md-8-24 block-lg hide">
+                            <div class="NS_campaigns__stats">
+                            <div class="digits_4" id="stats"></div>
+                            <div class="h1_2 w100p bg-navy-400 mb2 mb3-md mt3-md mt0-lg">
+                            <div class="bg-green-400 h100p" style="width: 27.04%;"></div>
+                            </div>
+                            <div class="flex flex-column-lg mb4 mb5-sm">
+                            <div class="mb2-lg">
+                            <div class="num nowrap" data-goal="15000.0" data-percent-raised="0.2704" data-pledged="4056.0" data-ref-tag="category_recommended" id="pledged"></div>
+                            <span class="block green-700 js-pledged medium type-16 type-24-md">$4,056</span>
+                            <span class="money usd project_currency_code"></span>
+                            <span class="block navy-600 type-12 type-14-md lh3-lg">
+                            pledged of <span class="money">$15,000</span> <span class="mobile-hide">goal</span>
+                            </span>
+                            </div>
+                            <div class="ml5 ml0-lg mb2-lg">
+                            <div class="js-backers_count block type-16 type-24-md medium navy-700" data-backers-count="41" id="backers_count">
+                            41
+                            </div>
+                            <span class="block navy-600 type-12 type-14-md lh3-lg js-backers_word">backers</span>
+                            </div>
+                            <span data-duration="33" data-end_time="2017-08-15T23:00:00-04:00" data-hours-remaining="430" id="project_duration_data"></span>
+                            <div class="ml5 ml0-lg js-campaign-state js-campaign-state__started js-campaign-state__submitted js-campaign-state__live js-campaign-state__purged js-campaign-state__successful js-campaign-state__failed">
+                            <div class="poll ksr_page_timer" data-dynamic="5" data-end_time="2017-08-15T23:00:00-04:00" data-poll_url="https://www.kickstarter.com/projects/264790802/an-all-night-peformance-with-emily-johnson/stats.json?v=1">
+                            <span class="block type-16 type-24-md medium navy-700 js-num">17</span>
+                            <span class="block navy-600 type-12 type-14-md lh3-lg js-text">days to go</span>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+
+
+                            <div class="NS_projects__back_and_star py0">
+                            <div class="js-campaign-state js-campaign-state__live js-hide-unless-campaign-running pb2">
+                            <a id="button-back-this-proj" class="bttn bttn-green bttn-large block mb3" title="Back this project" href="/projects/264790802/an-all-night-peformance-with-emily-johnson/pledge/new?clicked_reward=false&amp;ref=category_recommended">Back this project</a>
+                            <div class="flex mb3">
+                            <div class="ajax-container block basis50p grow-1 w100p" id="watching-widget">
+                            <div class="Project2101180270" data-conditions="[{&quot;is_starred&quot;:true}]" data-render="&quot;<div class=\&quot;NS_watches__watch js-unwatch\&quot;>\n<a class=\&quot;bttn bttn-medium bttn-green w100p\&quot; href=\&quot;/projects/264790802/an-all-night-peformance-with-emily-johnson/unwatch\&quot;><svg class=\&quot;svg-icon__heart fill-green-700\&quot; aria-hidden=\&quot;true\&quot;><use xlink:href=\&quot;#heart\&quot;></use></svg>\n<span>Saved</span>\n</a></div>\n\n&quot;"
+                            data-evaluation="false"></div>
+                            <div class="Project2101180270" data-conditions="[{&quot;!is_starred&quot;:true}]" data-render="&quot;<div class=\&quot;NS_watches__watch js-watch\&quot;>\n<a class=\&quot;bttn bttn-medium bttn-shadow-dark w100p\&quot; href=\&quot;/projects/264790802/an-all-night-peformance-with-emily-johnson/watch\&quot;><svg class=\&quot;svg-icon__heart fill-navy-600 icon-small\&quot; aria-hidden=\&quot;true\&quot;><use xlink:href=\&quot;#heart\&quot;></use></svg>\n<span>Remind me</span>\n</a></div>\n\n&quot;"
+                            data-evaluation="true">
+                            <div class="NS_watches__watch js-watch">
+                            <a class="bttn bttn-medium bttn-shadow-dark w100p" href="/projects/264790802/an-all-night-peformance-with-emily-johnson/watch"><svg class="svg-icon__heart fill-navy-600 icon-small" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use></svg>
+                            <span>Remind me</span>
+                            </a></div>
+
+                            </div>
+                            </div>
+                            <div class="basis50p block-sm flex grow-1 items-center justify-center react_share_icons w100p" data-share_icons="{&quot;campaign_launched&quot;:true,&quot;is_backing&quot;:false,&quot;facebook_share_url&quot;:&quot;https://www.kickstarter.com/projects/264790802/an-all-night-peformance-with-emily-johnson?ref=project_share&quot;,&quot;twitter_share_url&quot;:&quot;https://twitter.com/intent/tweet?text=Check%20out%20Gather%20on%20a%20Field%20of%20Quilts%20for%20a%20One-Night%20Performance%20by%20Performance%20Space%20122%20on%20%40Kickstarter&amp;url=http%3A%2F%2Fkck.st%2F2vgQsot&quot;,&quot;embed_url&quot;:&quot;/projects/264790802/an-all-night-peformance-with-emily-johnson/widget&quot;,&quot;mail_to_url&quot;:&quot;mailto:?body=%0A%20%20%20%20%20%20Gather%20on%20a%20Field%20of%20Quilts%20for%20a%20One-Night%20Performance%0A%0A%20%20%20%20%20%20https%3A%2F%2Fwww.kickstarter.com%2Fprojects%2F264790802%2Fan-all-night-peformance-with-emily-johnson%0A&quot;,&quot;project_short_link&quot;:&quot;http://kck.st/2udB7rY&quot;}">
+                            <div data-reactroot="" class="w100p">
+                            <div class="flex items-center justify-between justify-end-lg">
+                            <div class="inline-block mx4">
+                            <a href="https://www.kickstarter.com/projects/264790802/an-all-night-peformance-with-emily-johnson?ref=project_share">
+                            <div><svg class="svg-icon__facebook icon-medium fill-dark-grey-500" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg>
+                            <span
+                            class="hide">Share</span>
+                            </div>
+                            </a>
+                            </div>
+                            <div class="inline-block mr4">
+                            <a href="https://twitter.com/intent/tweet?text=Check%20out%20Gather%20on%20a%20Field%20of%20Quilts%20for%20a%20One-Night%20Performance%20by%20Performance%20Space%20122%20on%20%40Kickstarter&amp;url=http%3A%2F%2Fkck.st%2F2vgQsot">
+                            <div><svg class="svg-icon__twitter icon-medium fill-dark-grey-500" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg>
+                            <span
+                            class="hide">Tweet</span>
+                            </div>
+                            </a>
+                            </div>
+                            <div class="inline-block mr4">
+                            <a href="mailto:?body=%0A%20%20%20%20%20%20Gather%20on%20a%20Field%20of%20Quilts%20for%20a%20One-Night%20Performance%0A%0A%20%20%20%20%20%20https%3A%2F%2Fwww.kickstarter.com%2Fprojects%2F264790802%2Fan-all-night-peformance-with-emily-johnson%0A">
+                            <div><svg class="svg-icon__mail icon-medium fill-dark-grey-500" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use></svg>
+                            <span
+                            class="hide">Mail</span>
+                            </div>
+                            </a>
+                            </div>
+                            <div class="inline-block">
+                            <a href="#">
+                            <div><svg class="svg-icon__embed icon-medium fill-dark-grey-500" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#embed"></use></svg>
+                            <span
+                            class="hide">Embed</span>
+                            </div>
+                            </a>
+                            </div>
+                            </div>
+                            <!-- react-empty: 27 -->
+                            </div>
+                            </div>
+
+                            </div>
+                            </div>
+                            </div>
+
+                            <p class="mb3 mb0-lg type-12">
+                            <span class="link-navy medium"><a class="navy-700 pointer" href="/help/faq/kickstarter+basics?ref=project_header#faq_41848">All or nothing.</a></span> This project will only be funded if it reaches
+                            its goal by
+                            <time datetime="2017-08-15T23:00:00-04:00" data-format="llll z" class="js-adjust-time">2017-08-15T23:00:00.000-04:00 EDT</time>.
+                            </p>
+
+                            </div>
+                            </div>
+                            <div class="grid-row order-2-md order-1-lg pt9-lg mt3 mt0-lg mb6-lg">
+                            <div class="col-full">
+                            <div class="grid-row flex flex-column flex-row-md relative">
+                            <div class="col-full col-sm-22-24 col-offset-sm-1-24 hide-md">
+                            <h2 class="type-24 type-28-sm type-38-md navy-700 medium mb3">
+                            Gather on a Field of Quilts for a One-Night Performance
+                            </h2>
+                            </div>
+                            <div class="col-full col-sm-22-24 col-offset-sm-1-24 col-md-4-24 col-offset-md-0-24 flex items-center flex-column-md items-start-md mb3 order-1-md">
+                            <a class="remote_modal_dialog" data-modal-title="About the creator" data-modal-class="modal_project_by" href="/projects/264790802/an-all-night-peformance-with-emily-johnson/creator_bio"></a>
+                            <span class="navy-700 ml2 ml0-md">
+                            By
+                            <a class="medium navy-700 remote_modal_dialog" data-modal-title="About the creator" data-modal-class="modal_project_by" href="/projects/264790802/an-all-night-peformance-with-emily-johnson/creator_bio">Performance Space 122</a>
+                            </span>
+                            <span class="hide inline-block-md mb2-md">
+                            <div class="navy-500">
+                            First created
+                            </div>
+                            </span>
+                            <div data-following="{&quot;is_following&quot;:false,&quot;creator_id&quot;:&quot;VXNlci0yNjQ3OTA4MDI=&quot;}" id="follow_creator"><button data-reactroot="" type="button" class="bttn bttn-xsmall bttn-grey ml2 ml0-md">Follow</button></div>
+
+                            </div>
+                            <div class="col-20-24 col-lg-15-24 hide block-md order-2-md">
+                            <h2 class="type-24 type-28-sm type-38-md navy-700 medium mb3">
+                            Gather on a Field of Quilts for a One-Night Performance
+                            </h2>
+                            <p class="type-14 type-18-md navy-600 mb0">
+                            Come together for a summer night of stargazing, indigenous storytelling and dance with choreographer and activist Emily Johnson.
+                            </p>
+                            </div>
+                            <div class="col-full col-sm-22-24 col-offset-sm-1-24 hide-md">
+                            <p class="type-14 type-18-md navy-600">
+                            Come together for a summer night of stargazing, indigenous storytelling and dance with choreographer and activist Emily Johnson.
+                            <a class="span bold fastclick navy-600" href="/projects/264790802/an-all-night-peformance-with-emily-johnson/description">
+                            Read more
+                            </a>
+                            </p>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="grid-row order-2-md hide-lg">
+                            <div class="col-full col-sm-22-24 col-offset-sm-1-24 col-md-20-24 col-offset-md-4-24">
+                            <div class="NS_campaigns__stats">
+                            <div class="digits_4" id="stats"></div>
+                            <div class="h1_2 w100p bg-navy-400 mb2 mb3-md mt3-md mt0-lg">
+                            <div class="bg-green-400 h100p" style="width: 27.04%;"></div>
+                            </div>
+                            <div class="flex flex-column-lg mb4 mb5-sm">
+                            <div class="mb2-lg">
+                            <div class="num nowrap" data-goal="15000.0" data-percent-raised="0.2704" data-pledged="4056.0" data-ref-tag="category_recommended" id="pledged"></div>
+                            <span class="block green-700 js-pledged medium type-16 type-24-md">$4,056</span>
+                            <span class="money usd project_currency_code"></span>
+                            <span class="block navy-600 type-12 type-14-md lh3-lg">
+                            pledged of <span class="money">$15,000</span> <span class="mobile-hide">goal</span>
+                            </span>
+                            </div>
+                            <div class="ml5 ml0-lg mb2-lg">
+                            <div class="js-backers_count block type-16 type-24-md medium navy-700" data-backers-count="41" id="backers_count">
+                            41
+                            </div>
+                            <span class="block navy-600 type-12 type-14-md lh3-lg js-backers_word">backers</span>
+                            </div>
+                            <span data-duration="33" data-end_time="2017-08-15T23:00:00-04:00" data-hours-remaining="430" id="project_duration_data"></span>
+                            <div class="ml5 ml0-lg js-campaign-state js-campaign-state__started js-campaign-state__submitted js-campaign-state__live js-campaign-state__purged js-campaign-state__successful js-campaign-state__failed">
+                            <div class="poll ksr_page_timer" data-dynamic="5" data-end_time="2017-08-15T23:00:00-04:00" data-poll_url="https://www.kickstarter.com/projects/264790802/an-all-night-peformance-with-emily-johnson/stats.json?v=1">
+                            <span class="block type-16 type-24-md medium navy-700 js-num">17</span>
+                            <span class="block navy-600 type-12 type-14-md lh3-lg js-text">days to go</span>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+
+                            </div>
+                            </div>
+
+                            <div class="grid-row order-2-md hide-lg">
+                            <div class="col-full col-sm-22-24 col-offset-sm-1-24 col-md-20-24 col-offset-md-4-24">
+                            <div class="NS_projects__back_and_star py0">
+                            <div class="js-campaign-state js-campaign-state__live js-hide-unless-campaign-running pb2">
+                            <a id="button-back-this-proj" class="bttn bttn-green bttn-large block mb3" title="Back this project" href="/projects/264790802/an-all-night-peformance-with-emily-johnson/pledge/new?clicked_reward=false&amp;ref=category_recommended">Back this project</a>
+                            <div class="flex mb3">
+                            <div class="ajax-container block basis50p grow-1 w100p" id="watching-widget">
+                            <div class="Project2101180270" data-conditions="[{&quot;is_starred&quot;:true}]" data-render="&quot;<div class=\&quot;NS_watches__watch js-unwatch\&quot;>\n<a class=\&quot;bttn bttn-medium bttn-green w100p\&quot; href=\&quot;/projects/264790802/an-all-night-peformance-with-emily-johnson/unwatch\&quot;><svg class=\&quot;svg-icon__heart fill-green-700\&quot; aria-hidden=\&quot;true\&quot;><use xlink:href=\&quot;#heart\&quot;></use></svg>\n<span>Saved</span>\n</a></div>\n\n&quot;"
+                            data-evaluation="false"></div>
+                            <div class="Project2101180270" data-conditions="[{&quot;!is_starred&quot;:true}]" data-render="&quot;<div class=\&quot;NS_watches__watch js-watch\&quot;>\n<a class=\&quot;bttn bttn-medium bttn-shadow-dark w100p\&quot; href=\&quot;/projects/264790802/an-all-night-peformance-with-emily-johnson/watch\&quot;><svg class=\&quot;svg-icon__heart fill-navy-600 icon-small\&quot; aria-hidden=\&quot;true\&quot;><use xlink:href=\&quot;#heart\&quot;></use></svg>\n<span>Remind me</span>\n</a></div>\n\n&quot;"
+                            data-evaluation="true">
+                            <div class="NS_watches__watch js-watch">
+                            <a class="bttn bttn-medium bttn-shadow-dark w100p" href="/projects/264790802/an-all-night-peformance-with-emily-johnson/watch"><svg class="svg-icon__heart fill-navy-600 icon-small" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use></svg>
+                            <span>Remind me</span>
+                            </a></div>
+
+                            </div>
+                            </div>
+
+                                                              </div>
+
+
+                                                  </body></html>

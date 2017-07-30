@@ -1,0 +1,10 @@
+<%= form_for @campaign do |f| %>
+    <%= f.text_field :name %>
+    <%= f.text_area :description %>
+    <%= f.file_field :image %>
+<% end %>
+
+
+<!-- # <%= image_tag @user.avatar.url %>
+# <%= image_tag @user.avatar.url(:medium) %>
+# <%= image_tag @user.avatar.url(:thumb) %> -->

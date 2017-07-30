@@ -1,0 +1,29 @@
+<h2>Created Projects: What you're bringing to life</h2>
+<br></br>
+
+<% @user.created_campaigns.each do |campaign| %>
+  <h3><%= campaign.name %></h3>
+  <ul>
+    <li>You've raised $<%= campaign.raised %> (<%= campaign.percent_complete %>% of goal)</li>
+    <li>Who's Funded You? (<%= campaign.number_backers %> Backers)</li>
+      <ol>
+        <% campaign.fundings.each do |funding| %>
+          <li><%= funding.backer.username %> contributed $<%= funding.amount %></li>
+        <% end %>
+      </ol>
+  </ul>
+  <%= render 'users/chart' %>
+<% end %>
+<br></br>
+<br></br>
+
+<h2>Backed Projects: What you've contributed to</h2>
+<br></br>
+
+<% @user.fundings.each do |funding| %>
+  <h3><%= funding.campaign.name %></h3>
+  <ul>
+    <li>Raised $<%= funding.campaign.raised %> (<%= funding.campaign.percent_complete %>% of goal)</li>
+    <li>You're one of <%= funding.campaign.number_backers %> backers </li>
+  </ul>
+<% end %>

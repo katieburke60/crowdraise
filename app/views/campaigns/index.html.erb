@@ -1,0 +1,228 @@
+<% render 'layouts/navbar' %>
+<div class="w-section section u-marginbottom-40">
+       <div class="w-container">
+           <div class="w-row u-marginbottom-30">
+               <div class="w-col w-col-10 w-col-small-6 w-col-tiny-6">
+                   <div class="fontsize-large lineheight-looser">Most Popular</div>
+               </div>
+               <!-- <div class="w-col w-col-2 w-col-small-6 w-col-tiny-6">
+                   <div class="w-row">
+                       <div class="w-col w-col-12"><a href="/explore?ref=home_score&amp;filter=all" class="btn btn-small btn-terciary">See All</a></div>
+                   </div>
+               </div> -->
+           </div>
+           <% @campaigns.each do |c| %>
+             <div class="w-row">
+                 <div class="w-col w-col-4">
+                     <div class="card-project card u-radius">
+                         <a href="/campaigns/<%= c.id %>" class="card-project-thumb" style="background-image: url(&quot;<%= c.image %>&quot;); display: block;"></a>
+                         <div>
+                             <div class="card-project-description alt">
+                                 <div class="fontweight-semibold u-text-center-small-only lineheight-tight u-marginbottom-10 fontsize-base"><a href="/campaigns/<%= c.id %>" class="link-hidden"><%= c.name %></a></div>
+                                 <div class="w-hidden-small w-hidden-tiny fontsize-smallest fontcolor-secondary u-marginbottom-20"><%= c.creator.username %></div>
+                                 <div class="w-hidden-small w-hidden-tiny fontcolor-secondary fontsize-smaller"><a href="/campaigns/<%= c.id %>" class="link-hidden"><%= c.description %></a></div>
+                             </div>
+                             <div class="card-project-meter aon online incomplete">
+                                 <div class="meter">
+                                     <div class="meter-fill" style="width: 29.31%;"></div>
+                                 </div>
+                             </div>
+                             <div class="card-project-stats">
+                                 <div class="w-row">
+                                     <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                                         <div class="fontsize-base fontweight-semibold"><%= number_to_percentage((c.raised / c.funding_goal), precision: 0) %></div>
+                                     </div>
+                                     <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-center-small-only">
+                                         <div class="fontsize-smaller fontweight-semibold">$<%= c.raised %></div>
+                                         <div class="fontsize-smallest lineheight-tightest">Raised</div>
+                                     </div>
+                                     <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-right">
+                                         <div class="fontsize-smaller fontweight-semibold"> 10 days</div>
+                                         <div class="fontsize-smallest lineheight-tightest">Remaining</div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+              <% end %>
+               <!-- <div class="w-col w-col-4">
+                   <div class="card-project card u-radius">
+                       <a href="/as_cronicas?ref=home_score" class="card-project-thumb" style="background-image: url(&quot;https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/project/uploaded_image/56997/project_thumb_large_Profile_Card_004.png&quot;); display: block;"></a>
+                       <div>
+                           <div class="card-project-description alt">
+                               <div class="fontweight-semibold u-text-center-small-only lineheight-tight u-marginbottom-10 fontsize-base"><a href="/as_cronicas?ref=home_score" class="link-hidden">As Crônicas de Os Poucos &amp; Amaldiçoados</a></div>
+                               <div class="w-hidden-small w-hidden-tiny fontsize-smallest fontcolor-secondary u-marginbottom-20">por Felipe Prado Gonçalves Cagno</div>
+                               <div class="w-hidden-small w-hidden-tiny fontcolor-secondary fontsize-smaller"><a href="/as_cronicas?ref=home_score" class="link-hidden">💀 Você já conhece a Ruiva. Agora está na hora de conhecer seu universo... 💀</a></div>
+                           </div>
+                           <div class="w-hidden-small w-hidden-tiny card-project-author altt">
+                               <div class="fontsize-smallest fontcolor-secondary"><span class="fa fa-map-marker fa-1"> </span>Barueri - SP</div>
+                           </div>
+                           <div class="card-project-meter aon online incomplete">
+                               <div class="meter">
+                                   <div class="meter-fill" style="width: 91.31%;"></div>
+                               </div>
+                           </div>
+                           <div class="card-project-stats">
+                               <div class="w-row">
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                                       <div class="fontsize-base fontweight-semibold">91%</div>
+                                   </div>
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-center-small-only">
+                                       <div class="fontsize-smaller fontweight-semibold">R$ 16.436</div>
+                                       <div class="fontsize-smallest lineheight-tightest">Levantados</div>
+                                   </div>
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-right">
+                                       <div class="fontsize-smaller fontweight-semibold">12 dias</div>
+                                       <div class="fontsize-smallest lineheight-tightest">Restantes</div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="w-col w-col-4">
+                   <div class="card-project card u-radius">
+                       <a href="/kalouv?ref=home_score" class="card-project-thumb" style="background-image: url(&quot;https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/project/uploaded_image/57607/project_thumb_large_Capa_video_cortada.png&quot;); display: block;"></a>
+                       <div>
+                           <div class="card-project-description alt">
+                               <div class="fontweight-semibold u-text-center-small-only lineheight-tight u-marginbottom-10 fontsize-base"><a href="/kalouv?ref=home_score" class="link-hidden">Construindo Elã, terceiro álbum da Kalouv</a></div>
+                               <div class="w-hidden-small w-hidden-tiny fontsize-smallest fontcolor-secondary u-marginbottom-20">por Kalouv</div>
+                               <div class="w-hidden-small w-hidden-tiny fontcolor-secondary fontsize-smaller"><a href="/kalouv?ref=home_score" class="link-hidden">Um trabalho construído junto com você. Ajude a tornar Elã, terceiro álbum da Kalouv, uma realidade</a></div>
+                           </div>
+                           <div class="w-hidden-small w-hidden-tiny card-project-author altt">
+                               <div class="fontsize-smallest fontcolor-secondary"><span class="fa fa-map-marker fa-1"> </span>Recife - PE</div>
+                           </div>
+                           <div class="card-project-meter aon online incomplete">
+                               <div class="meter">
+                                   <div class="meter-fill" style="width: 47.25%;"></div>
+                               </div>
+                           </div>
+                           <div class="card-project-stats">
+                               <div class="w-row">
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                                       <div class="fontsize-base fontweight-semibold">47%</div>
+                                   </div>
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-center-small-only">
+                                       <div class="fontsize-smaller fontweight-semibold">R$ 9.300</div>
+                                       <div class="fontsize-smallest lineheight-tightest">Levantados</div>
+                                   </div>
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-right">
+                                       <div class="fontsize-smaller fontweight-semibold">29 dias</div>
+                                       <div class="fontsize-smallest lineheight-tightest">Restantes</div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="w-col w-col-4">
+                   <div class="card-project card u-radius">
+                       <a href="/cantinho_do_caio_r_lyeh_boy_d0fc?ref=home_score" class="card-project-thumb" style="background-image: url(&quot;https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/project/uploaded_image/60280/project_thumb_large_catarse_capa_2.jpg&quot;); display: block;"></a>
+                       <div>
+                           <div class="card-project-description alt">
+                               <div class="fontweight-semibold u-text-center-small-only lineheight-tight u-marginbottom-10 fontsize-base"><a href="/cantinho_do_caio_r_lyeh_boy_d0fc?ref=home_score" class="link-hidden">Cantinho do Caio: R'Lyeh Boy</a></div>
+                               <div class="w-hidden-small w-hidden-tiny fontsize-smallest fontcolor-secondary u-marginbottom-20">por Caio Oliveira</div>
+                               <div class="w-hidden-small w-hidden-tiny fontcolor-secondary fontsize-smaller"><a href="/cantinho_do_caio_r_lyeh_boy_d0fc?ref=home_score" class="link-hidden">"Foi Cthulhu que me deu" vai estar adesivado no meu PS4!</a></div>
+                           </div>
+                           <div class="w-hidden-small w-hidden-tiny card-project-author altt">
+                               <div class="fontsize-smallest fontcolor-secondary"><span class="fa fa-map-marker fa-1"> </span>Teresina - PI</div>
+                           </div>
+                           <div class="card-project-meter aon online incomplete">
+                               <div class="meter">
+                                   <div class="meter-fill" style="width: 53.14%;"></div>
+                               </div>
+                           </div>
+                           <div class="card-project-stats">
+                               <div class="w-row">
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                                       <div class="fontsize-base fontweight-semibold">53%</div>
+                                   </div>
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-center-small-only">
+                                       <div class="fontsize-smaller fontweight-semibold">R$ 3.539</div>
+                                       <div class="fontsize-smallest lineheight-tightest">Levantados</div>
+                                   </div>
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-right">
+                                       <div class="fontsize-smaller fontweight-semibold">54 dias</div>
+                                       <div class="fontsize-smallest lineheight-tightest">Restantes</div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="w-col w-col-4">
+                   <div class="card-project card u-radius">
+                       <a href="/bikearte2017?ref=home_score" class="card-project-thumb" style="background-image: url(&quot;https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/project/uploaded_image/59344/project_thumb_large_BA17_CAPA_CATARSE.png&quot;); display: block;"></a>
+                       <div>
+                           <div class="card-project-description alt">
+                               <div class="fontweight-semibold u-text-center-small-only lineheight-tight u-marginbottom-10 fontsize-base"><a href="/bikearte2017?ref=home_score" class="link-hidden">Bike Arte 2017</a></div>
+                               <div class="w-hidden-small w-hidden-tiny fontsize-smallest fontcolor-secondary u-marginbottom-20">por Instituto Aromeiazero</div>
+                               <div class="w-hidden-small w-hidden-tiny fontcolor-secondary fontsize-smaller"><a href="/bikearte2017?ref=home_score" class="link-hidden">A rua é a gente e a gente é a rua!
+Ajude o Bike Arte a marcar presença em SP com + um festival.  </a></div>
+                           </div>
+                           <div class="w-hidden-small w-hidden-tiny card-project-author altt">
+                               <div class="fontsize-smallest fontcolor-secondary"><span class="fa fa-map-marker fa-1"> </span>São Paulo - SP</div>
+                           </div>
+                           <div class="card-project-meter flex online incomplete">
+                               <div class="meter">
+                                   <div class="meter-fill" style="width: 3.24%;"></div>
+                               </div>
+                           </div>
+                           <div class="card-project-stats">
+                               <div class="w-row">
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                                       <div class="fontsize-base fontweight-semibold">3%</div>
+                                   </div>
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-center-small-only">
+                                       <div class="fontsize-smaller fontweight-semibold">R$ 1.135</div>
+                                       <div class="fontsize-smallest lineheight-tightest">Levantados</div>
+                                   </div>
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-right">
+                                       <div class="fontsize-smaller fontweight-semibold">25 dias</div>
+                                       <div class="fontsize-smallest lineheight-tightest">Restantes</div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="w-col w-col-4">
+                   <div class="card-project card u-radius">
+                       <a href="/atrasdomundo2017?ref=home_score" class="card-project-thumb" style="background-image: url(&quot;https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/project/uploaded_image/59040/project_thumb_large_Didia_-_fotos_Felipe_O_Neill__5_.jpg&quot;); display: block;"></a>
+                       <div>
+                           <div class="card-project-description alt">
+                               <div class="fontweight-semibold u-text-center-small-only lineheight-tight u-marginbottom-10 fontsize-base"><a href="/atrasdomundo2017?ref=home_score" class="link-hidden">Atrás do Mundo</a></div>
+                               <div class="w-hidden-small w-hidden-tiny fontsize-smallest fontcolor-secondary u-marginbottom-20">por Maria Eduarda de Carvalho</div>
+                               <div class="w-hidden-small w-hidden-tiny fontcolor-secondary fontsize-smaller"><a href="/atrasdomundo2017?ref=home_score" class="link-hidden">Atrás do Mundo, delicado e bem humorado, criando uma experiência enriquecedora para as crianças.</a></div>
+                           </div>
+                           <div class="w-hidden-small w-hidden-tiny card-project-author altt">
+                               <div class="fontsize-smallest fontcolor-secondary"><span class="fa fa-map-marker fa-1"> </span>Rio de Janeiro - RJ</div>
+                           </div>
+                           <div class="card-project-meter flex online incomplete">
+                               <div class="meter">
+                                   <div class="meter-fill" style="width: 37.72%;"></div>
+                               </div>
+                           </div>
+                           <div class="card-project-stats">
+                               <div class="w-row">
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                                       <div class="fontsize-base fontweight-semibold">37%</div>
+                                   </div>
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-center-small-only">
+                                       <div class="fontsize-smaller fontweight-semibold">R$ 23.033</div>
+                                       <div class="fontsize-smallest lineheight-tightest">Levantados</div>
+                                   </div>
+                                   <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-right">
+                                       <div class="fontsize-smaller fontweight-semibold">57 dias</div>
+                                       <div class="fontsize-smallest lineheight-tightest">Restantes</div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div> -->
+   <div></div>
