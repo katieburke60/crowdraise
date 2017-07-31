@@ -4,7 +4,15 @@ var dataSetProperties = {
   highlightFill: 'rgba(220,220,220,0.75)',
   highlightStroke: 'rgba(220,220,220,1)'
 }
+
+$.get('http://localhost:3000/users/1').done(function(data){
+   alert('loaded' + data.text())
+ })
+
+ $('#campaign').text()
+
 $(function() {
+  $("#campaign").val
   success(campaign)
 })
 //What information do we get from the show page? Can we assume we have access to campaign?

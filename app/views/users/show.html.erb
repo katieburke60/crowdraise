@@ -1,31 +1,63 @@
-<%= render partial: 'connect' %>
+<%= render partial: 'connect', :locals => {:user => @user} %>
+<html>
+  <header>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300|Raleway" rel="stylesheet">
+  </header>
+
+<style>
+h2  {
+  font-size:40px;
+  font-color:#666666;
+  font-family: 'Indie Flower', cursive;
+  padding:30px 0px 0px 0px;
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:17px;
+}
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size:13px;
+}
+</style>
 
 <h2>Created Projects: What you're bringing to life</h2>
-<br></br>
-
+<br>
+<script>
+var chartData = []
+</script>
 <% @user.created_campaigns.each do |campaign| %>
-  <h3><%= campaign.name %></h3>
-  <ul>
-    <li>You've raised $<%= campaign.raised %> (<%= campaign.percent_complete %>% of goal)</li>
-    <li>Who's Funded You? (<%= campaign.number_backers %> Backers)</li>
-      <ol>
-        <% campaign.fundings.each do |funding| %>
-          <li><%= funding.backer.username %> contributed $<%= funding.amount %></li>
-        <% end %>
-      </ol>
-  </ul>
-  <!-- <%= render 'users/chart' %> -->
+  <div id=<%= "campaign-#{campaign.id}" %> >
+    <h3><%= campaign.name %></h3>
+    <ul>
+      <li>You've raised $<%= campaign.raised %> (<%= campaign.percent_complete %>% of goal)</li>
+      <li>Who's Funded You? (<%= campaign.number_backers %> Backers)</li>
+        <ol>
+          <% campaign.fundings.each do |funding| %>
+            <li><%= funding.backer.username %> contributed $<%= funding.amount %></li>
+          <% end %>
+        </ol>
+    </ul>
+    <script>
+      chartData.push(<%= campaign.to_json.html_safe %>)
+    </script>
+    <!-- <%= render partial: 'chart' %> -->
+  </div>
 <% end %>
 <br></br>
-<br></br>
-
+<br />​<br /><hr />​​​​​​​​​​​​​​​​​​​<br />​​​​​
 <h2>Backed Projects: What you've contributed to</h2>
-<br></br>
+<br>
 
+<% fundings_listed = [] %>
 <% @user.fundings.each do |funding| %>
+  <% next if fundings_listed.include?(funding.campaign_id) %>
   <h3><%= funding.campaign.name %></h3>
   <ul>
     <li>Raised $<%= funding.campaign.raised %> (<%= funding.campaign.percent_complete %>% of goal)</li>
     <li>You're one of <%= funding.campaign.number_backers %> backers </li>
   </ul>
+  <% fundings_listed << funding.campaign_id %>
 <% end %>
+
+</html>

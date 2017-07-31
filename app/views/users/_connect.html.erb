@@ -1,1 +1,22 @@
-<a href="<%= stripe_oauth_path %>">Connect With Stripe</a>
+<style>
+.button {
+    display: block;
+    width: 165px;
+    height: 40px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: normal;
+    float:right;
+    vertical-align: text-top;
+    line-height: 18px;
+    font-size:17px;
+    margin-right:10px
+}
+</style>
+<br>
+<% if !@user.stripe_user_id %>
+  <a class='button' href="<%= stripe_oauth_path %>">Stripe Connect</a>  
+<% end %>

@@ -5,13 +5,16 @@
  * License: Creative Commons Attribution 3.0 License
  * Website: http://themes.audaindesigns.com
  */
+
+
 h1{
-  font-family:'helvetica';
-  font-size:200%;
+  font-family:'Tahoma';
+  font-size:50px
 }
 
  .main-content {
  	padding:50px 30px;
+  height:100px;
  }
 
 
@@ -23,7 +26,7 @@ h1{
  	margin-top:50px;
 	min-height:230px;
 	margin-right: 1px;
-  width: 1000px
+  width: 1200px
  }
 
  .reward {
@@ -53,8 +56,8 @@ h1{
 .container1 {
 border: 2px;
 border-style: solid;
-height: 400px;
-width: 900px;
+height: 350px;
+width: 800px;
 max-width: 100%;
 height: auto;
 width: auto\9; /* ie8 */
@@ -280,10 +283,12 @@ a {
 	padding-right:5px;
 }
 .progress-bar {
-	background-color: #00b6b2;
+	background-color: #326ada;
 	box-shadow:none;
+  height:30px;
 }
 .progress {
+  font-family:;
 	height: 30px;
 	background-color: #ECEBEB;
 	box-shadow:none;

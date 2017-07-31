@@ -1,9 +1,50 @@
+REFACTORING
+1. Make controllers skinnier
+
 NEXT TO DOS
-1. Make graph
+1. Accounts
+- Can get paid out  
+
+2. New campaign page
+- Add controller action and logic
+- form_for @campaign POST to my database
+- Make sure campaign is attached to user (pass current user into the show page)
+- Check whether the current_user has a stripe account [MODEL METHOD]
+   - YES: Post form information
+   - NO: Redirect? to Stripe Connect sign up page and save information in the database
+- Save new campaign
+
+3. Delete campaign
+- Controller destroy action (@campaign.clear)
+- Flash notice that campaign has been destroyed
+
+4. End campaign
+- Add ended section to the campaign index page
+- Check whether the deadline is before or after today's date
+- Add a method that checks
+
+Steven and Jeff Help
+- Other ways that I can flex the API more that would be impressive (use developer tools, coupons, etc.)
+- The type of feedback I could give them that would resonate
+- Steven: Flow of the program and whether I am putting stuff in the right places.
+
+
+NEED HELP TO DOS
+Higher
+3. Making the graph render
+2. How to do a flash message
+1. How to use modules (including use of self) and where you can access methods defined in controller actions
+-- How to fix CURRENT_USER issue (not avalable with stripe_oauth)
+7. How to pass ruby objects to js (particularly stuff that's in the show page)
+Lower
+6. How to appropriately link up charge objects (Can't remember what this is)
+4. Save stripe API keys appropriately (better understand ENV, etc.)
+- How to seed data after it has already been seeded once
+- How to do assignment
 
 QUESTIONS
-1. What's happening with the Oauth2 gem?
-2. Better understanding of where I can access methods from (e.g., current user - defined in application helpers)
+- Better understanding of where I can access methods from (e.g., current user - defined in application helpers)
+- Difference between redirect and render
 
 LONG LIST
 High
@@ -27,36 +68,11 @@ Low
 - Show status (ended versus active in your account page)
 2. refunds
 3. Coupons (rewards area)
+4. CSS on contributions page
 
-NEED HELP TO DOS
-1. Make the correct dates for the campaigns (how to convert date time to MJD)
-      - Date.today.mjd - Campaign.all.find(1).date_goal.mjd
-
-2. CSS: Image adjust along with the main campaign information
-
+LESS IMPT QUESTIONS
 3. How to do different foreign_keys (e.g., backers vs. users)
-4. Save stripe API keys appropriately (better understand ENV, etc.)
-5. How to use modules (including use of self) and where you can access methods defined in controller actions
-6. How to appropriately link up charge objects.
-7. How to pass ruby objects to js (particularly stuff that's in the show page)
-8. How to fix CURRENT_USER issue (not avalable with stripe_oauth)
-9. How to do a flash message
-
 SMALLER TO DOS
-1. Make components of campaign show page dynamic (basic)
--- Fix the graphic with the funded amount
--- Update show page for backer versus creator views
-
-2. Make $ update based on whether someone has contributed fundings
-
-3. Charges routes and controller actions
-
-4. My profile page with info about campaigns I have created and backed
-
-5. Add error to charge create controller action
-
-6. Require login / signup before you can make contribution (or simultaneously)
-
 
 
 COMPLETED
@@ -81,6 +97,21 @@ B. Contribute to a campaign
 5b. Error
 -- Render campaigns/1/charges/new
 -- Flash notice with error message
+1. Make components of campaign show page dynamic (basic) [DONE]
+-- Fix the graphic with the funded amount
+-- Update show page for backer versus creator views
+
+2. Make $ update based on whether someone has contributed fundings [DONE]
+
+3. Charges routes and controller actions [DONE]
+
+4. My profile page with info about campaigns I have created and backed
+
+5. Add error to charge create controller action
+
+6. Require login / signup before you can make contribution (or simultaneously)
+
+
 
 ROUTES
 /

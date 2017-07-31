@@ -13,7 +13,7 @@ class StripeController < ApplicationController
   def oauth
     client_id = Rails.configuration.stripe[:client_id]
     redirect_uri = 'http://localhost:3000/connect/authorize'
-    stripe_url = "https://connect.stripe.com/oauth/authorize?response_type=code&client_id=#{client_id}&scope=read_write&redirect_uri=#{redirect_uri}"
+    stripe_url = "https://connect.stripe.com/express/oauth/authorize?response_type=code&client_id=#{client_id}&scope=read_write&redirect_uri=#{redirect_uri}"
 
     redirect_to stripe_url
   end
@@ -21,7 +21,7 @@ class StripeController < ApplicationController
   def authorize
     resp = Faraday.post('https://connect.stripe.com/oauth/token') do |req|
       req.params['client_id'] =  Rails.configuration.stripe[:client_id]
-      # req.params['client_secret'] = Rails.configuration.stripe[:secret_key]
+      req.params['client_secret'] = Rails.configuration.stripe[:secret_key]
       req.params['grant_type'] = 'authorization_code'
       req.params['code'] = params[:code]
     end

@@ -20,7 +20,7 @@ class Campaign < ApplicationRecord
   end
 
   def number_backers
-    self.backers.length
+    self.backers.uniq.length
   end
 
   def days_left

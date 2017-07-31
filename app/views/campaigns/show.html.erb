@@ -33,7 +33,7 @@
 <body>
 	<!--header-->
 	<header >
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="goal-summary pull-left">
 					<div class="backers">
@@ -42,10 +42,10 @@
 					</div>
 					<div class="funded">
 						<h3><%= @campaign.raised %></h3>
-						<span>raised out of <%= @campaign.funding_goal %></span>
+						<span>raised out of <%= @campaign.funding_goal.round %></span>
 					</div>
 					<div class="time-left">
-						<h3>27</h3>
+						<h3><%= @campaign.days_left %></h3>
 						<span>days left to go</span>
 					</div>
 				</div>
@@ -59,9 +59,9 @@
 	<!--main content-->
 	<!-- <div class="all-content"> -->
 		<div class="main-content">
-			<div class="container">
+			<div class="container-fluid">
 				<!-- <div class="row align-items-start"> -->
-					<div class="col-md-12">
+					<div class="col-md-12 ">
 						<div class="section-block main">
 							<div class="funding-meta">
 								<h1><%= @campaign.name %></h1>
@@ -69,17 +69,17 @@
 								<span class="type-meta"><i class="fa fa-tag"></i> <a href="#">crowdfunding</a>, <a href="#">launch</a> </span>
 								<!--img src="assets/img/image-heartbeat.jpg" class="img-responsive" alt="launch HTML5 Crowdfunding"-->
 								<div class="container1 centerImage ">
-									<img class='fill-vertical fill-horizontal' src="https://s3.amazonaws.com/policymic-images/eph9wqbj52ix1wppcjl16l2iujos76hjoa7l4229cinqsthfyhjw4d0w3c1qsdai.jpg" alt="John Doe"></img>
+									<img class='fill-vertical fill-horizontal' src="<%= @campaign.image %>" alt="John Doe"></img>
 								</div>
 								<p><%= @campaign.description %></p>
 								<h2>$<%= @campaign.raised %></h2>
 								<span class="contribution">raised by <strong><%= @campaign.backers.length%></strong> ready to launch</span>
 								<div class="progress">
 									<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: <%= @campaign.percent_complete %>%;">
-										<span class="sr-only"><%= @campaign.percent_complete %>% Complete</span>
+										<span style='width:100px'><%= @campaign.percent_complete %>% Complete</span>
 									</div>
 								</div>
-								<span class="goal-progress"><strong><%= @campaign.percent_complete %>%</strong> of <%= @campaign.funding_goal %> raised</span>
+								<span class="goal-progress"><strong><%= @campaign.percent_complete %>%</strong> of <%= @campaign.funding_goal.round %> raised</span>
 							</div>
 							<span class="count-down"><strong><%= @campaign.days_left %></strong>Days to go.</span>
 							<a href="/campaigns/<%= @campaign.id %>/fundings/new" class="btn btn-launch">HELP LAUNCH</a>
