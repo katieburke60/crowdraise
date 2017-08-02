@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  img {
+    height:260px;
+    width:100%;
+    padding-bottom:5px;
+  }
+  .flash {
+    color:red;
+    font-size:18px;
+  }
+  h1 {
+    font-family: 'Mada', sans-serif;
+    font-size:25px;
+  }
+</style>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Heroic Features - Start Bootstrap Template</title>
+
+
+    <!-- Custom CSS -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+    <link href="css/catarse.css" rel="stylesheet">
+    <link href="css/campaignshow.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr>
+        <!-- Title -->
+        <% if !current_user %>
+        <span class='flash' style="float:left">
+          Signup or login to view and create campaigns!
+        </span>
+        <% end %>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Popular Campaigns</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+          <% row_index = 0 %>
+          <% @campaigns.each do |c| %>
+          <% row_index += 1 %>
+          <% if row_index == 4 %>
+            <% row_index = 0 %>
+            </div>
+            <div class="row text-center">
+          <% end%>
+            <div class="col-md-4 col-sm-6 hero-feature">
+                <!-- <div class="thumbnail"> -->
+                    <img src="<%= c.image %>" alt="">
+                    <div class="caption">
+                      <!-- <div class="card-project-description alt"> -->
+                          <h3><%= c.name %></h3>
+                          <div class="w-hidden-small w-hidden-tiny fontcolor-secondary fontsize-smaller"><a href="/campaigns/<%= c.id %>" class="link-hidden"><%= c.description %></a></div>
+                          <div class="w-hidden-small w-hidden-tiny fontsize-smallest fontcolor-secondary u-marginbottom-20"><%= c.creator.username %></div>
+                      <!-- </div> -->
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100" style="width:<%= c.percent_complete %>%">
+                          <span><%= c.percent_complete %>%</span>
+                        </div>
+                      </div>
+                      <div class="card-project-stats">
+                          <div class="w-row">
+                              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                                  <div class="fontsize-base fontweight-semibold">$<%= c.raised %> Raised</div>
+                              </div>
+                              <!-- <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-center-small-only">
+                                  <div class="fontsize-smaller fontweight-semibold"></div> -->
+                                  <!-- <div class="fontsize-smallest lineheight-tightest">Raised</div> -->
+                              <!-- </div> -->
+                              <p><%= c.days_left %> Days Remaining</p>
+                              <!-- <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 u-text-right">
+                                  <div class="fontsize-smaller fontweight-semibold"> <%= c.days_left %> days remaining</div> -->
+                                  <!-- <div class="fontsize-smallest lineheight-tightest">Remaining</div> -->
+                              <!-- </div> -->
+                          </div>
+                      </div>
+                  </div>
+                        <p>
+                          <a href="/campaigns/<%= c.id %>" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                <!-- </div> -->
+            <!-- </div> -->
+        <% end %>
+        <!-- </div> -->
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+   <div></div>

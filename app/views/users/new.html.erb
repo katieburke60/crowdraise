@@ -1,0 +1,30 @@
+<div class="container">
+
+    <hr>
+    <!-- Title -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Sign Up to start creating and contributing to campaigns</h3>
+        </div>
+    </div>
+
+<br></br>
+
+<div class="col-md-4">
+<% if @user.errors.any? %>
+  <div id='profile-errors'>
+    <% @user.errors.full_messages.each do |message| %>
+    <p><%= message %></p>
+    <% end %>
+  </div>
+<% end %>
+<br/>
+
+<%= form_for @user do |f| %>
+  <div>Email    <%= f.text_field :email %></div><br>
+  <div>Username <%= f.text_field :username %></div><br>
+  <div>Password <%= f.password_field :password %></div><br />
+
+  <div><%= f.submit %></div>
+<% end %>
+</div>

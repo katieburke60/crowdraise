@@ -1,0 +1,58 @@
+var dataSetProperties = {
+  fillColor: 'rgba(220,220,220,0.5)',
+  strokeColor: 'rgba(220,220,220,0.8)',
+  highlightFill: 'rgba(220,220,220,0.75)',
+  highlightStroke: 'rgba(220,220,220,1)'
+}
+
+$.get('http://localhost:3000/users/1').done(function(data){
+   alert('loaded' + data.text())
+ })
+
+ $('#campaign').text()
+
+$(function() {
+  $("#campaign").val
+  success(campaign)
+})
+//What information do we get from the show page? Can we assume we have access to campaign?
+
+function getFundings(campaign) {
+  return campaign.fundings.map(function(funding) {
+    return funding
+  })
+}
+
+function getContributions(fundings) {
+  return fundings.map(function(funding){
+    return funding['amount']
+  })
+}
+
+function getUsernames(fundings) {
+  return fundings.map(function(funding){
+    return funding.backer['username']
+  })
+}
+
+// $.get(url).success()
+
+function success(campaign) {
+  var fundings = getFundings(campaign)
+  var contributions = getContributions(fundings)
+  var backers = getUsernames(fundings)
+  chartData(backers, contributions)
+}
+
+window.onload = function chartData(labels, inputData) {
+  var ctx = document.getElementById("backersChart").getContext('2d')
+
+  var data = {
+        labels: labels,
+        datasets: [{
+            label: '$ contributed',
+            data: inputData,
+        }],
+  }
+  var myBarChart = new Chart(ctx).Bar(data, dataSetProperties)
+}

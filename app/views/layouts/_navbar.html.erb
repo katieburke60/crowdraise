@@ -1,0 +1,17 @@
+<div class="topnav" >
+  <a href="/">See Campaigns</a>
+  <% if current_user %>
+    <a href="/users/<%= current_user.id %>">My Profile</a>
+    <a href="/campaigns/new">Start a Campaign</a>
+    <!-- <a href="/users/2">Start Your Project</a> -->
+    <!-- <a href="/users/2">Fund A Project</a> -->
+    <span style="float:right"><a href="/logout">Logout</a></span>
+  <% end %>
+
+  <% if !current_user %>
+    <span style="float:right">
+      <a href="/signup">Sign Up</a>
+      <a href="/login">Login</a>
+    </span>
+  <% end %>
+</div>
